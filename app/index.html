@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1 class="title">YTPlaylistPlayer</h1>
+        </div>
+        <div class="playlistForm">
+            <form name="playlistForm" onsubmit="event.preventDefault(); onPlaylistSubmission(); return false;">
+                <label for="playlistURL">Playlist URL: </label>
+                <input type="text" id="playlistURL" name='playlistURL'>
+                <input type="submit" value="Load playlist" id="load-playlist-button">
+            </form>
+        </div>
+        <div id="download-progress-div" hidden>
+            <progress id="download-progress-bar"></progress>
+            <p>Loading playlist...</p>
+        </div>
+        <div id="player-controls" hidden>
+            <button id="play-button">Play</button>
+            <button id="pause-button" disabled>Pause</button>
+            <button id="skip-button" disabled>Skip</button>
+            <button id="shuffle-button" disabled>Shuffle</button>
+            <br><br>
+            <input class="player-controls" type="checkbox" name="loop-queue" id="loop-queue" value="Loop queue" checked>
+            <label class="player-controls" for="loop-queue">Loop queue</label>
+            <br>
+            <input class="player-controls" type="checkbox" name="loop-song" id="loop-song" value="Loop song">
+            <label class="player-controls" for="loop-song">Loop song</label>
+        </div>
+        <div id="now-playing" hidden>
+            <br><br>
+            <img src="" id="song-thumbnail">
+            <br>
+            <p><span id="song-title"></span></p>
+            <input type="range" id="song-progress" value="0"></input>
+        </div>
+        
+    </body>
+</html>

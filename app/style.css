@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+p, h1, h2, h3, h4, h5, h6, label, input[type="text"], input[type="submit"], button, span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+div.title {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    padding: 5px 50px 5px 50px;
+}
+
+div.playlistForm {
+    padding: 10px 5px 10px 5px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(19, 19, 19);
+    text-align: center;
+    align-content: center;
+}
+
+input[type="text"], input[type="submit"], button {
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+input[type="submit"], button {
+    min-height: 25px;
+}
+
+input[type="submit"]:active, button:active {
+    background-color: rgb(63, 63, 63);
+    border-color: green;
+}
+
+input[type="submit"]:hover:enabled, button:hover:enabled {
+    background-color: rgb(63, 63, 63);
+}
+
+input[type="submit"]:disabled, button:disabled {
+    color: rgb(138, 136, 136);
+}
+
+label.player-controls {
+    font-size: 12px;
+}
+
+img#song-thumbnail {
+    height: 120px;
+    border: solid 1px white;
+    border-radius: 4px;
+}
+
+input[type="range"]#song-progress {
+    /*width: 200px;*/
+    width: inherit;
+}
+
+div#now-playing {
+    width: 216.47px; /* Width of YouTube thumbnails */
+    align-self: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

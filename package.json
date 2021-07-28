@@ -1,0 +1,28 @@
+{
+  "name": "ytplaylistplayer",
+  "version": "0.0.1",
+  "description": "Music player that streams audio from videos in a YouTube playlist.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/builderpepc/YTPlaylistPlayer.git"
+  },
+  "author": "builderpepc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/builderpepc/YTPlaylistPlayer/issues"
+  },
+  "homepage": "https://github.com/builderpepc/YTPlaylistPlayer#readme",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "youtube-sr": "^4.1.7",
+    "ytdl-core": "^4.9.0"
+  }
+}
