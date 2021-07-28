@@ -1,7 +1,6 @@
 
 const YouTube = require('youtube-sr').default;
 const ytdl = require('ytdl-core');
-window.ytdl = ytdl;
 const {Howl, Howler} = require('howler');
 const execSync = require("child_process").execSync;
 const exec = require("child_process").exec;
